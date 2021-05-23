@@ -1,3 +1,3 @@
 <?php
-    include("idex.html");
+    include_once("index.html");
 ?>
