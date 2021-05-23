@@ -1,0 +1,114 @@
+/** Responsive Css from 900px to 250px*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto Slab', serif;
+}
+
+.header .container{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    margin-top: 70px;
+}
+.container img{
+    width: 20%;
+    height: 20%;
+}
+h2 {
+    border: none;
+    display: block;
+}
+
+.products .small-container .row{
+    margin-left: -2em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-content: center;
+}
+
+.coll-4 img{
+    width: 70%;
+    height: 70%;
+    
+}
+.coll-4:hover{
+    transform: translateY(-10px);
+}
+.offer_mobile {
+    display: none;
+
+}
+.offer{
+    display: block;
+    margin-left: 10px;
+    background: rgba(255, 254, 254, 0.993);
+}
+.offer .col-ecollection img{
+    width: 100%;
+}
+.offer .paragraph{
+    margin-right: 3rem;
+    margin-left: 3rem;
+}
+/*   900px to 700px */
+/*   Repitition */
+@media only screen and (max-width:900px)and (min-width:600px){
+    .products .small-container .row{
+        margin-left: 3em;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: center;
+        align-content: center;
+    }
+    .coll-4 img{
+        width: 70%;
+        height: 70%;
+        
+    }
+    .coll-4:hover{
+        transform: translateY(-10px);
+    }
+    .offer_mobile {
+        display: none;
+    
+    }
+    .offer{
+        display: block;
+        margin-left: 10px;
+        background: rgba(255, 254, 254, 0.993);
+    }
+    .offer .col-ecollection img{
+        width: 100%;
+    }
+    .offer .paragraph{
+        margin-right: 3rem;
+        margin-left: 3rem;
+    }
+}
+
+@media only screen and (max-width:340px){
+    .products .small-container .row{
+        display: block;
+    }
+}
+.coll-4{
+    margin-left: 5px;
+}
+/* //***Product Page**/
+.row-2 .product-title{
+    width: 100%;
+}
+
+.row-2 .select{
+    width: 77%;
+    margin-left: 2em;
+}
+/* Products detail other product*/
+
+

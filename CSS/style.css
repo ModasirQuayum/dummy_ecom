@@ -1,0 +1,627 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-row;
+}
+
+body{
+    font-family: 'Roboto Slab', serif;
+}
+
+ .navbar{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+.navbar .logo .header1{
+    font-family: 'Dancing Script', cursive;
+    width: 100%;
+    border-bottom: none;
+}
+.navbar .logo a{
+    text-decoration: none;
+}
+.navbar .logo .header1{
+    border-radius: 5px;
+}
+.navbar .logo .header1 .span1{
+    color: rgba(240, 142, 107, 0.993);
+    background: white;
+    border-radius: 7px;
+}
+.navbar .logo .header1 .span2{
+    color: white;
+    background: coral;
+    border-radius: 7px;
+}
+nav{
+    flex: 1;
+    text-align: left;
+    margin-top: 7px;
+}
+
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+nav ul li{
+    display: inline-block;
+    margin-left: 30px;
+
+}
+nav ul li a{
+    text-decoration: none;
+    color: coral;
+}
+nav ul li a:hover{
+    text-decoration: none;
+    background-color: coral;
+    color: cornsilk;
+    border-radius: 25px;
+    padding: 8px 30px;
+    margin: 30px 0;
+}
+.add-to-cart{
+    cursor: pointer;
+}
+p{
+    color: rgb(53, 53, 53);
+}
+.container{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.col-ecollection img{
+    width: 100%;
+}
+.offer .paragraph{
+    margin-right: 3rem;
+    margin-left: 2rem;
+}
+.col-ecollection h1{
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+}
+
+.btn-1{
+    display: inline-block;
+    background: rgb(255, 255, 255);
+    color: coral;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 25px;
+    transition: background 0.5s;
+    list-style: none;
+    text-decoration: none;
+    border: 1px solid coral;
+}
+.btn-1:hover{
+    background: coral;
+    color: cornsilk;
+    list-style: none;
+    text-decoration: none;
+}
+.header{
+    background-color: rgba(230, 230, 230, 0.473);
+}
+.header .row{
+    margin-top: 70px;
+}
+
+.catagories{
+    margin: 70px 0;
+   
+}
+.col-3{
+    flex-basis: 30%;
+    min-width: 250px;
+    margin-bottom: 30px;
+}
+
+.col-3 img{
+    width: 100%;
+    
+}
+.small-container{
+    max-width: 1080px;
+    margin: auto;
+}
+h2{
+    margin: 20px;
+    border-bottom: 2px solid coral;
+    width: 26%;
+    
+}
+h2 a{
+    color: black;
+    text-decoration: none;
+}
+    
+h2 a:hover{
+    color: black;
+    text-decoration: none;
+}
+
+.coll-4{
+    flex-basis: 25%;
+    min-width: 200px;
+    margin-bottom: 30px;
+    padding: 10px;
+    margin-bottom: 50px;
+    transition: transform 0.5s;
+}
+.coll-4 img{
+    width: 100%;
+    
+}
+.coll-4:hover{
+    transform: translateY(-10px);
+}
+/* offer */
+.offer{
+    background: rgba(230, 230, 230, 0.473);
+    margin-top: 70px;
+    padding: 30px 0;
+}
+small{
+    color: rgb(53, 53, 53);
+}
+.offer_mobile{
+    display: none;
+}
+/* brands */
+
+.brands{
+    margin: 100px auto;
+}
+.row .col-brand{
+     width: 160px; 
+}
+.row .col-brand img{
+    width: 100%;
+    cursor: pointer;
+    filter: grayscale(100%);
+}
+.row .col-brand img:hover{
+   filter: grayscale(0);
+}
+
+.contact-form .btn-1{
+    width: 100px;
+}
+.menueicon{
+    width: 28px;
+    margin-left: 20px;
+    display: none;
+}
+
+/* media quiry */
+
+@media only screen and (max-width:999px){
+    nav ul{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        /* background: #343e40;  */
+        background: coral;
+        width: 100%;
+        overflow: hidden;
+        transition: max-height 0.5s;
+
+    }
+    nav ul li{
+        display: block;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    nav ul li a{
+        color: white;
+        
+    }
+    .menueicon{
+        display: block;
+        cursor: pointer;
+    }
+    .header .row {
+        margin-top: 150px;
+    }
+}
+
+/* media quiry less tahn 600 screen */
+
+@media only screen and (max-width:600px){
+    .row{
+        text-align: center;
+    }
+    .col-2, .col-3, .coll-4{
+        flex-basis: 100%;
+    }
+    .cart-page p{
+        display: none;
+    }
+} 
+
+
+/* Product Page */
+
+.row-2{
+    justify-content: space-between;
+    margin: 100px auto 50px;
+}
+.row-2 h2{
+    width: 28%;
+}
+select{
+    border: 1px solid coral;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+select:focus{
+    outline: none;
+}
+select option:hover{
+    color: coral;
+}
+
+/* pagination */
+.pagination{
+    margin: 0 auto 70px;
+}
+.pagination span{
+    display: inline-block;
+    border: 1px solid coral;
+    margin-left: 10px;
+    width: 70px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.pagination span:hover{
+    background-color: coral;
+    color: white;
+}
+
+/* Product Detail Page */
+
+.product-Detail-Page{
+    margin-top: 85px;
+}
+.product-Detail-Page select{
+    display: block;
+   
+}
+.product-Detail-Page input{
+    width:70px;
+    height: 40px;
+    padding: 10px;
+    font-size: 20px;
+    margin-right: 10px;
+    border: 1px solid coral;
+    border-radius: 5px;
+
+}
+input:focus{
+    outline: none;
+}
+.product-Detail-Page input:hover{
+    
+    border: 1px solid coral;
+    border-radius: 5px;
+    background-color: coral;
+    color: white;
+
+}
+
+.row-2 a{
+    color: coral;
+    text-decoration: none;
+}
+/* Products detail other product*/
+
+.others h2 {
+    width: 47%;
+    font-size: 1.5rem;
+}
+.others p {
+    margin-right: 1.2rem;
+    font-size: 1rem;
+}
+.others_coll img{
+    width: 70%;
+    height: 50%;
+}
+/* <!-- Add to Cart detail --> */
+
+.cart-page{
+    margin: 80px auto;
+}
+
+table{
+    width:100%;
+    border-collapse: collapse;
+    border: 2px solid coral;
+    border-radius: 10px;
+}
+
+.cart-img{
+    display: flex;
+    flex-wrap: wrap;
+}
+th{
+    text-align: left;
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+    background-color: coral;
+    font-weight: normal;
+    border: 2px solid coral;
+}
+td{
+    padding: 10px 5px;
+    border: 2px solid coral;
+}
+td input{
+    width: 70px;
+    height: 40px;
+    border-radius: 5px;
+    padding: 5px;
+    border: 1px solid coral;
+}
+
+td input:hover{
+    background-color: coral;
+    color: white;
+}
+
+td a{
+    color: coral;
+    font-size: 15px;
+}
+td img{
+    margin-right: 20px;
+}
+.total-price{
+    display: flex;
+    justify-content: flex-end;
+}
+.total-price table{
+    border-top: 2px solid coral;
+    width: 100%;
+    max-width: 350px;
+}
+td:last-child{
+    text-align: right;
+
+}
+th:last-child{
+    text-align: right;
+}
+
+/* Account Page */
+.account-page{
+    padding: 50px 0;
+    background-color: rgba(230, 230, 230, 0.473);
+    margin: auto;
+}
+.form{
+    background-color: rgba(131, 131, 131, 0.247);
+    width: 300px;
+    height: 450px;
+    position:relative;
+    text-align: center;
+    padding: 20px 0;
+    margin: auto;
+    box-shadow: coral;
+    overflow: hidden;
+
+}
+.form img{
+    border-radius: 100%;
+    border: 2xp solid coral;
+}
+
+.form span{
+    font-weight: bold;
+    padding: 0 10px;
+    color: #555;
+    cursor: pointer;
+    width: 100px;
+    display: inline-block;
+}
+.form-btn{
+    display: inline-block;
+}
+.form form{
+    max-width: 300px;
+    padding: 0 20px;
+    position: absolute;
+    top: 130px;
+    transition: transform 1s;
+}
+form input{
+    width: 100%;
+    height: 30px;
+    margin: 10px 0;
+    padding: 0 10px;
+    border: 1px solid coral;
+}
+
+form .btn-1{
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    margin: 10px 0;
+
+}
+form .btn-1:focus{
+    outline: none;
+}
+
+#login-form{
+    left: -300px;
+}
+
+#login-form a{
+    color: coral;
+}
+
+#reg-form{
+    left: 0;
+}
+form a{
+    font-size: 15px;
+}
+#indicator{
+    width: 50%;
+    border: none;
+    background: coral;
+    height: 3px;
+    margin-top: 8px;
+    transform: translateX(100px);
+}
+
+/*footer*/
+
+.footer{
+    background: rgba(58, 58, 57, 0.904);
+    color: #fcf4ec;
+    height: 45vh;
+    position: relative;
+    
+}
+
+.footer h2{
+    width: 100%;
+    border-bottom: none;
+}
+.footer p{
+    color: white;
+}
+.footer .footer-content {
+    height: 350px;
+    display: flex;
+    padding:25px;
+}
+.footer .footer-content .footer-section{
+    flex: 1;
+}
+.footer .footer-content .about h1{
+    font-family: 'Dancing Script', cursive;
+}
+.footer .footer-content .about h1 span{
+    color: rgba(240, 142, 107, 0.993);
+}
+.footer .footer-content .contact span{
+    display: block;
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+}
+.footer .footer-content .about .social a{
+    border: 1px solid white;
+    color: white;
+    width: 45px;
+    height: 44px;
+    padding-top: 5px;
+    margin-right: 5px;
+    text-align: center;
+    display: inline-block;
+    font-size: 1.3rem;
+    border-radius: 5px;
+}
+.footer .footer-content .about .social a:hover{
+    margin-left: 15px;
+    font-size: 1.5rem;
+    color: rgb(160, 208, 248);
+    transition: all 0.3s;
+}
+.footer .footer-content .about .social .inst:hover{
+    color: rgba(255, 191, 221, 0.959);
+}
+.footer .footer-content .links {
+    text-align: center;
+}
+.footer .footer-content .links ul a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    list-style: none;
+    margin-top: 2px;
+}
+.footer .footer-content .links ul a:hover{
+    margin-left: 15px;
+    font-size: 1.5rem;
+}
+
+.footer .footer-content .contact-form .contact-input{
+    display: block;
+    line-height: 1.5rem;
+    margin-bottom: 10px;
+    color: white;
+    background: rgba(158, 142, 142, 0.11);
+    border-radius: 5px;
+    border: none;
+    width: 80%;
+    font-size: 1.2rem;
+    margin-left: 20px;
+}
+.footer .footer-content .contact-form textarea{
+    resize: none;
+}
+.footer .footer-content .contact-form button{
+    border: none;
+    margin-left: 20px;
+}
+.footer .footer-content .contact-form .contact-input:focus{
+    background:rgba(48, 46, 46, 0.76);
+    border: none;
+}
+.footer .footer-bottom{
+    background: #343e40;
+    color: #fcf3f3;
+    height: 10px;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    padding: 20px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+@media only screen and (max-width:900px){
+    .footer{
+        height: 150vh;
+    }
+}
+@media only screen and (max-width:500px){
+    .footer{
+        height: 64em;
+        margin-right: -1em;
+    }
+    .footer .footer-content{
+        display: block;
+    }
+    .footer .footer-section{
+        margin-bottom: 4em;
+    }
+}
+
+
+
